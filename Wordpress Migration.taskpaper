@@ -1,11 +1,18 @@
-Wordpress Export Blockers:
+Wordpress Migration Blockers:
 	- Posts
+		- Permalinks
+			Should not change
 		- Comments
 	- Images
-		- Images (convert to markdown)
-		- Image Captions [shortcodes]
+		- Images
+			Images in WordPress are rendered with `srcset` and several image sizes. This should not be hard coded into the post but generated at build time
+		- Image Captions
+			Captions are rendered as <figure> in HTML. This should not be hard coded into the post but rendered at built time
 		- Galleries
+			Should ingest something like a <ul> list of images and output gallery. HTML should not be hard coded into the post but generated at build time
+			- Needs to be able to automatically create thumbnails for images.
 		- Image workflow
+			Automatic Image resizing for various device sizes done at build time
 Replacement requirements:
 	- Text Format: Markdown
 	- Image Workflow
