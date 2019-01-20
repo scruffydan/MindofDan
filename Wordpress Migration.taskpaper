@@ -1,0 +1,21 @@
+Wordpress Export Blockers:
+	- Posts
+		- Comments
+	- Images
+		- Images (convert to markdown)
+		- Image Captions [shortcodes]
+		- Galleries
+		- Image workflow
+Replacement requirements:
+	- Text Format: Markdown
+	- Image Workflow
+		- Automatic Image resizing for various device sizes, ideally done at build time
+	- Galleries
+		- Should ingest something like a <ul> list of images and  output gallery
+		- Needs to be able to automatically create thumbnails for images.
+	- Backend Language: Javascript (nodejs), Go or Python
+		- Should be headless (not impose requirements on frontend)
+	- Frontend: Gatsby, Nextjs maybe something else
+Nice to haves:
+	- File based backend (no database)
+	- API that can be consumed by various front ends (this might conflict with the desire for no database)
