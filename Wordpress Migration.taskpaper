@@ -11,7 +11,8 @@ Wordpress Migration Blockers:
 		- Image Captions
 			Captions are rendered as <figure> in HTML. This should not be hard coded into the post but rendered at built time
 		- Image Permalinks
-			Images should be organized according to dates (at least by year), not all be placed in one folder.
+			Images should be either organized according to dates (at least by year), or be placed in the same folder as the markdown file that references them.
+			They should not all be placed in one folder.
 		- Galleries
 			Should ingest something like a <ul> list of images and output gallery. HTML should not be hard coded into the post but generated at build time
 			- Needs to be able to automatically create thumbnails for images.
