@@ -18,6 +18,8 @@ Wordpress Migration Blockers:
 			- Needs to be able to automatically create thumbnails for images.
 		- Image workflow
 			Automatic Image resizing for various device sizes done at build time
+	- Search
+		Users needs to be able to search site contents
 Replacement requirements:
 	- Text Format: Markdown
 	- Image Workflow
