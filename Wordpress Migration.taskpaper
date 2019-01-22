@@ -10,6 +10,9 @@ Wordpress Migration Blockers:
 			Images in WordPress are rendered with `srcset` and several image sizes. This should not be hard coded into the post but generated at build time
 		- Image Captions
 			Captions are rendered as <figure> in HTML. This should not be hard coded into the post but rendered at built time
+		- Image Links
+			Do I want images in posts to link o themselves?
+			This might remove links from images https://wordpress.org/plugins/remove-image-links/
 		- Image Permalinks
 			Images should be either organized according to dates (at least by year), or be placed in the same folder as the markdown file that references them.
 			They should not all be placed in one folder.
