@@ -2,23 +2,27 @@ Wordpress Migration Blockers:
 	- Posts
 		- Permalinks
 			Should not change
+			What about duplicate slugs? Build should fail since I don't prefix date before post slug
 		- Comments
 			Do I want to have live comments on the blog?
 			Do current comments need to be imported? (Probably)
 	- Images
 		- Images
+			Full image size should be linked in post. Build should replace images 
 			Images in WordPress are rendered with `srcset` and several image sizes. This should not be hard coded into the post but generated at build time
 		- Image Captions
+			Currently Captions are using the [caption] shortcode in Wordpress
 			Captions are rendered as <figure> in HTML. This should not be hard coded into the post but rendered at built time
 		- Image Links
-			Do I want images in posts to link o themselves?
+			Do I want images in posts to link to themselves? (Yes for many images)
 			This might remove links from images https://wordpress.org/plugins/remove-image-links/
+			- The build should generate a Lightbox for Images that link to themselves
 		- Image Permalinks
 			Images should be either organized according to dates (at least by year), or be placed in the same folder as the markdown file that references them.
 			They should not all be placed in one folder.
 		- Galleries
 			Should ingest something like a <ul> list of images and output gallery. HTML should not be hard coded into the post but generated at build time
-			- Needs to be able to automatically create thumbnails for images.
+			- Build needs to be able to automatically create thumbnails for images.
 		- Image workflow
 			Automatic Image resizing for various device sizes done at build time
 	- Search
