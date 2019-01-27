@@ -6,7 +6,7 @@ Wordpress Migration Blockers:
 		- Comments
 			Do I want to have live comments on the blog?
 			Do current comments need to be imported? (Probably)
-	- Images
+	- Images Workflow
 		- Images
 			Full image size should be linked in post. Build should replace images 
 			Images in WordPress are rendered with `srcset` and several image sizes. This should not be hard coded into the post but generated at build time
@@ -23,8 +23,6 @@ Wordpress Migration Blockers:
 		- Galleries
 			Should ingest something like a <ul> list of images and output gallery. HTML should not be hard coded into the post but generated at build time
 			- Build needs to be able to automatically create thumbnails for images.
-		- Image workflow
-			Automatic Image resizing for various device sizes done at build time
 	- Search
 		Users needs to be able to search site contents
 Replacement requirements:
