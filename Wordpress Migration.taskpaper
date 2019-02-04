@@ -10,6 +10,9 @@ Wordpress Migration Blockers:
 		- Images
 			Full image size should be linked in post. Build should replace images 
 			Images in WordPress are rendered with `srcset` and several image sizes. This should not be hard coded into the post but generated at build time
+			- Convert Images to full size with `Replace Content Image Size` plugin
+			- Link to Image instead of media page with this
+					https://stackoverflow.com/questions/28026160/change-image-links-from-attachment-page-to-image-url?answertab=votes#tab-top
 		- Image Captions
 			Currently Captions are using the [caption] shortcode in Wordpress
 			Captions are rendered as <figure> in HTML. This should not be hard coded into the post but rendered at built time
